@@ -1,10 +1,10 @@
-function string.yui(...)
+function StringYui(...)
     local result = ""
     local args = {...}
     
     for _, num in ipairs(args) do
         if type(num) ~= "number" or num < 1 or math.floor(num) ~= num then
-            error("string.yui expected positive integers.")
+            error("yui expected positive integers.")
         end
         
         local index = num - 1
